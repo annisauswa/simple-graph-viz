@@ -1,0 +1,520 @@
+{
+  "nodes": [
+    {
+      "id": "LTB_MAIN_ENTRANCE",
+      "label": "Pintu Masuk Utama",
+      "floor": "LT_LB",
+      "type": "ENTRANCE"
+    },
+    {
+      "id": "LTB_MAIN_LOBBY_ATRIUM",
+      "label": "Lobby Utama / Atrium",
+      "floor": "LT_LB",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LTB_RETAIL_CORRIDOR",
+      "label": "Koridor Retail",
+      "floor": "LT_LB",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LTB_PASSENGER_LIFT_LOBBY",
+      "label": "Lift Lobby",
+      "floor": "LT_LB",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LTB_BOSTON_DRUG",
+      "label": "Boston Drug (Apotek)",
+      "floor": "LT_LB",
+      "type": "RETAIL"
+    },
+    {
+      "id": "LTB_MAIN_EXIT",
+      "label": "Pintu Keluar Utama",
+      "floor": "LT_LB",
+      "type": "EXIT"
+    },
+    {
+      "id": "LTB_RETAIL_NOBU",
+      "label": "Nobu Bank",
+      "floor": "LT_LB",
+      "type": "RETAIL"
+    },
+    {
+      "id": "LTB_RETAIL_01",
+      "label": "Retail Unit 1",
+      "floor": "LT_LB",
+      "type": "RETAIL"
+    },
+    {
+      "id": "LTB_RETAIL_02",
+      "label": "Retail Unit 2",
+      "floor": "LT_LB",
+      "type": "RETAIL"
+    },
+    {
+      "id": "LTB_PUBLIC_TOILET_M",
+      "label": "Toilet Pria",
+      "floor": "LT_LB",
+      "type": "TOILET"
+    },
+    {
+      "id": "LTB_PUBLIC_TOILET_F",
+      "label": "Toilet Wanita",
+      "floor": "LT_LB",
+      "type": "TOILET"
+    },
+    {
+      "id": "LTB_ACCESSIBLE_TOILET",
+      "label": "Toilet Disabilitas",
+      "floor": "LT_LB",
+      "type": "TOILET"
+    },
+    {
+      "id": "LT1_MAIN_ENTRANCE",
+      "label": "Pintu Masuk Lantai 1",
+      "floor": "LT_01",
+      "type": "ENTRANCE"
+    },
+    {
+      "id": "LT1_MAIN_LOBBY",
+      "label": "Lobby Utama Lantai 1",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_RECEPTION_MAIN",
+      "label": "Resepsionis Utama",
+      "floor": "LT_01",
+      "type": "ADMIN"
+    },
+    {
+      "id": "LT1_PHARMACY",
+      "label": "Farmasi",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_LIFT_LOBBY_MAIN",
+      "label": "Lift Lobby Lantai 1",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_CLINIC_CORRIDOR",
+      "label": "Koridor Klinik",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_WAITING_AREA_EAST",
+      "label": "Ruang Tunggu Timur",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_OUTPATIENT_LOBBY",
+      "label": "Lobby Rawat Jalan",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_RECEPTION_CASHIER_WEST",
+      "label": "Kasir",
+      "floor": "LT_01",
+      "type": "ADMIN"
+    },
+    {
+      "id": "LT1_WEST_CORRIDOR",
+      "label": "Koridor Barat",
+      "floor": "LT_01",
+      "type": "CIRCULATION"
+    },
+    {
+      "id": "LT1_NURSE_STATION_MAIN",
+      "label": "Nurse Station Utama",
+      "floor": "LT_01",
+      "type": "ADMIN"
+    },
+    {
+      "id": "LT1_CLINIC_01",
+      "label": "Ruang Konsultasi 1",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_02",
+      "label": "Ruang Konsultasi 2",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_03",
+      "label": "Ruang Konsultasi 3",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_04",
+      "label": "Ruang Konsultasi 4",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_05",
+      "label": "Ruang Konsultasi 5",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_06",
+      "label": "Ruang Konsultasi 6",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_CLINIC_07",
+      "label": "Ruang Konsultasi 7",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_TOILET_PUBLIC_M",
+      "label": "Toilet Pria (Lobby)",
+      "floor": "LT_01",
+      "type": "TOILET"
+    },
+    {
+      "id": "LT1_TOILET_PUBLIC_F",
+      "label": "Toilet Wanita (Lobby)",
+      "floor": "LT_01",
+      "type": "TOILET"
+    },
+    {
+      "id": "LT1_TOILET_EAST_M",
+      "label": "Toilet Pria (Koridor Klinik)",
+      "floor": "LT_01",
+      "type": "TOILET"
+    },
+    {
+      "id": "LT1_TOILET_EAST_F",
+      "label": "Toilet Wanita (Koridor Klinik)",
+      "floor": "LT_01",
+      "type": "TOILET"
+    },
+    {
+      "id": "LT1_TREATMENT_PREP_01",
+      "label": "Ruang Persiapan Treatment 1",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_TREATMENT_PREP_02",
+      "label": "Ruang Persiapan Treatment 2",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_TREATMENT_ROOM_01",
+      "label": "Ruang Treatment 1",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_TREATMENT_ROOM_02",
+      "label": "Ruang Treatment 2",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    },
+    {
+      "id": "LT1_RECOVERY_ROOM",
+      "label": "Ruang Pemulihan",
+      "floor": "LT_01",
+      "type": "CLINICAL_ROOM"
+    }
+  ],
+  "edges": [
+    {
+      "source": "LTB_MAIN_ENTRANCE",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_ENTRANCE",
+      "target": "LTB_MAIN_EXIT",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_LOBBY_ATRIUM",
+      "target": "LTB_MAIN_ENTRANCE",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_LOBBY_ATRIUM",
+      "target": "LTB_RETAIL_CORRIDOR",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_LOBBY_ATRIUM",
+      "target": "LTB_PASSENGER_LIFT_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_RETAIL_CORRIDOR",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_RETAIL_CORRIDOR",
+      "target": "LTB_BOSTON_DRUG",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_PASSENGER_LIFT_LOBBY",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_BOSTON_DRUG",
+      "target": "LTB_RETAIL_CORRIDOR",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_EXIT",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_MAIN_EXIT",
+      "target": "LTB_MAIN_ENTRANCE",
+      "relation": "nearby"
+    },
+    {
+      "source": "LTB_RETAIL_NOBU",
+      "target": "LTB_RETAIL_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_RETAIL_01",
+      "target": "LTB_RETAIL_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_RETAIL_02",
+      "target": "LTB_RETAIL_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_PUBLIC_TOILET_M",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_PUBLIC_TOILET_F",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_ACCESSIBLE_TOILET",
+      "target": "LTB_MAIN_LOBBY_ATRIUM",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_MAIN_ENTRANCE",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_MAIN_ENTRANCE",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_RECEPTION_MAIN",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_PHARMACY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_LIFT_LOBBY_MAIN",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_MAIN_LOBBY",
+      "target": "LT1_OUTPATIENT_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_RECEPTION_MAIN",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_RECEPTION_MAIN",
+      "target": "LT1_PHARMACY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_PHARMACY",
+      "target": "LT1_RECEPTION_MAIN",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_PHARMACY",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_LIFT_LOBBY_MAIN",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_CLINIC_CORRIDOR",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_CLINIC_CORRIDOR",
+      "target": "LT1_WAITING_AREA_EAST",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_WAITING_AREA_EAST",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_OUTPATIENT_LOBBY",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_OUTPATIENT_LOBBY",
+      "target": "LT1_RECEPTION_CASHIER_WEST",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_OUTPATIENT_LOBBY",
+      "target": "LT1_WEST_CORRIDOR",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_RECEPTION_CASHIER_WEST",
+      "target": "LT1_OUTPATIENT_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_WEST_CORRIDOR",
+      "target": "LT1_OUTPATIENT_LOBBY",
+      "relation": "nearby"
+    },
+    {
+      "source": "LT1_NURSE_STATION_MAIN",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_01",
+      "target": "LT1_NURSE_STATION_MAIN",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_02",
+      "target": "LT1_NURSE_STATION_MAIN",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_03",
+      "target": "LT1_NURSE_STATION_MAIN",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_04",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_05",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_06",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_CLINIC_07",
+      "target": "LT1_CLINIC_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TOILET_PUBLIC_M",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TOILET_PUBLIC_F",
+      "target": "LT1_MAIN_LOBBY",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TOILET_EAST_M",
+      "target": "LT1_WAITING_AREA_EAST",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TOILET_EAST_F",
+      "target": "LT1_WAITING_AREA_EAST",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TREATMENT_PREP_01",
+      "target": "LT1_OUTPATIENT_LOBBY",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TREATMENT_PREP_02",
+      "target": "LT1_OUTPATIENT_LOBBY",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TREATMENT_ROOM_01",
+      "target": "LT1_WEST_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_TREATMENT_ROOM_02",
+      "target": "LT1_WEST_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LT1_RECOVERY_ROOM",
+      "target": "LT1_WEST_CORRIDOR",
+      "relation": "nearest"
+    },
+    {
+      "source": "LTB_PASSENGER_LIFT_LOBBY",
+      "target": "LT1_LIFT_LOBBY_MAIN",
+      "relation": "connects_to"
+    },
+    {
+      "source": "LT1_LIFT_LOBBY_MAIN",
+      "target": "LTB_PASSENGER_LIFT_LOBBY",
+      "relation": "connects_to"
+    }
+  ]
+}

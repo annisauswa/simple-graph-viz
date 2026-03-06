@@ -1,0 +1,120 @@
+import json
+import streamlit as st
+import networkx as nx
+from pyvis.network import Network
+import streamlit.components.v1 as components
+
+# --- 1. Page Config & CSS Injection ---
+# initial_sidebar_state="expanded" ensures it is open by default
+st.set_page_config(layout="wide", page_title="Hospital Navigator", initial_sidebar_state="expanded")
+
+# We only keep the CSS that expands the main map container to full screen
+st.markdown("""
+    <style>
+    /* Remove padding and margins from the main canvas to allow full screen map */
+    .block-container {
+        padding-top: 1rem !important;
+        padding-bottom: 0rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        max-width: 100% !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
+# --- 2. Load Data & Build Graph ---
+@st.cache_data
+def load_data():
+    with open("knowledge_graph.json", "r") as f:
+        return json.load(f)
+
+def build_graph(data):
+    G = nx.Graph()
+    for node in data["nodes"]:
+        G.add_node(
+            node["id"], 
+            label=node["label"], 
+            title=f"{node['label']} ({node['floor']})", 
+            group=node["floor"]
+        )
+    for edge in data["edges"]:
+        G.add_edge(edge["source"], edge["target"])
+    return G
+
+# --- 3. Create Interactive Visualization ---
+def generate_pyvis_html(G, path=None):
+    # Set height to 95vh for near-full viewport height
+    net = Network(height="95vh", width="100%", bgcolor="#ffffff", font_color="black")
+    net.barnes_hut(gravity=-8000, central_gravity=0.3, spring_length=200)
+    net.from_nx(G)
+
+    # Style standard nodes
+    for node in net.nodes:
+        node["color"] = "#97c2fc" if node.get("group") == "LT_LB" else "#ffb347"
+        node["size"] = 30
+        node["borderWidth"] = 2
+        node["font"] = {"size": 20, "face": "Arial"}
+
+    # Style standard edges
+    for edge in net.edges:
+        edge["color"] = "#a9a9a9"
+        edge["width"] = 3
+
+    # Highlight path if one is provided
+    if path:
+        path_edges = list(zip(path, path[1:]))
+        for node in net.nodes:
+            if node["id"] in path:
+                node["color"] = "#ff4d4d" 
+                node["size"] = 45 
+                node["borderWidth"] = 4
+                
+        for edge in net.edges:
+            if (edge["from"], edge["to"]) in path_edges or (edge["to"], edge["from"]) in path_edges:
+                edge["color"] = "#ff4d4d"
+                edge["width"] = 8 
+
+    net.save_graph("network_graph.html")
+    with open("network_graph.html", "r", encoding="utf-8") as f:
+        html_data = f.read()
+    return html_data
+
+# --- 4. Streamlit UI Application ---
+data = load_data()
+G = build_graph(data)
+location_choices = {node["id"]: f"{node['label']} ({node['floor']})" for node in data["nodes"]}
+
+# Using the native Streamlit sidebar for stability
+with st.sidebar:
+    st.header("🏥 Hospital Navigator")
+    st.markdown("Select a start and end location to find the route.")
+    
+    start_loc = st.selectbox("From Location:", options=list(location_choices.keys()), format_func=lambda x: location_choices[x])
+    end_loc = st.selectbox("To Location:", options=list(location_choices.keys()), format_func=lambda x: location_choices[x], index=1)
+    
+    search_button = st.button("Search Route", type="primary", use_container_width=True)
+
+path_to_draw = None
+
+if search_button:
+    if start_loc == end_loc:
+        st.sidebar.warning("Start and End locations are the same!")
+    else:
+        try:
+            path_to_draw = nx.shortest_path(G, source=start_loc, target=end_loc)
+            st.sidebar.success("✅ Route Found!")
+            
+            # Show steps in the sidebar
+            st.sidebar.markdown("**Steps:**")
+            for step in path_to_draw:
+                st.sidebar.markdown(f"- {location_choices[step]}")
+                
+        except nx.NetworkXNoPath:
+            st.sidebar.error("❌ No available route between these locations.")
+
+# Render Pyvis HTML
+html_string = generate_pyvis_html(G, path=path_to_draw)
+
+# Display the HTML component
+components.html(html_string, height=800)
